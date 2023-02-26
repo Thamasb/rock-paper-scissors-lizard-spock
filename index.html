@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+
+    <title>Rock paper scissors lizard Spock</title>
 </head>
+
 <body>
-    
+    <h1 class="heading">
+        <img>Rock paper scissors lizard Spock Game
+    </h1>
+    <div>
+        <div>
+
+            <input type="radio" id="rock" onclick="g_guess(1);"><b id="rock1">Rock</b>
+            <input type="radio" id="paper" onclick="g_guess(2);"><b id="paper1">Paper</b>
+            <input type="radio" id="scissors" onclick="g_guess(3);"><b id="scissors1">Scissors</b>
+            <input type="radio" id="lizard" onclick="g_guess(4);"><b id="lizard1">Lizard</b>
+            <input type="radio" id="spock" onclick="g_guess(5);"><b id="spock1">Spock</b>
+
+        </div>
+        <div>
+            <input type="text" id="computer"><b id="computer1">Computer</b>
+            <input type="button" id="reset" value="Reset" onclick="reset();">
+            <input type="text" id="gamer"><b id="gamer1">Gamer</b>
+        </div>
+    </div>
+    <div>
+        <p>Rules: scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes
+            scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vapourizes rock, rock
+            crushes scissors</p>
+    </div>
+    <div></div>
+
     <script src="assets/js/sript.js"></script>
 </body>
+
 </html>
